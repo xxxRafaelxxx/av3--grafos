@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rota Mais Curta em Grafos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <span class="title">Rota Mais Curta em Grafos</span>
+        </div>
+        <div class="window-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="start">Ponto de Início:</label>
+                    <select id="start"></select>
+                </div>
+                <div class="control-group">
+                    <label for="end">Ponto de Destino:</label>
+                    <select id="end"></select>
+                </div>
+                <button type="button" onclick="findShortestPath()">Encontrar Rota</button>
+            </div>
+            <div id="graph-container">
+                <canvas id="graphCanvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
